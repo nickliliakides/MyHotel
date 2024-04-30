@@ -1,6 +1,6 @@
-import { supabaseUrl } from '../services/supabase';
-
-const imageUrl = `${supabaseUrl}/storage/v1/object/public/room-images/`;
+const imageUrl = `${
+  import.meta.env.VITE_SUPABASE_URL
+}/storage/v1/object/public/room-images/`;
 
 export const cabins = [
   {
